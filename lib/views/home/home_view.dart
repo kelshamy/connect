@@ -4,41 +4,41 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('Hello World'),
+      body: Text('Connect'),
       bottomNavigationBar: Container(
         height: 70,
-        color: Colors.purple,
+        color: Colors.cyan,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Expanded(
               child: FlatButton(
                 onPressed: () {},
-                child: Text('Home'),
+                child: Icon(Icons.book),
               ),
             ),
             Expanded(
               child: FlatButton(
                 onPressed: () {},
-                child: Text('Home'),
+                child: Icon(Icons.person),
               ),
             ),
             Expanded(
               child: FlatButton(
                 onPressed: () {},
-                child: Text('Home'),
+                child: Icon(Icons.home),
               ),
             ),
             Expanded(
               child: FlatButton(
                 onPressed: () {},
-                child: Text('Home'),
+                child: Icon(Icons.mail),
               ),
             ),
             Expanded(
               child: FlatButton(
                 onPressed: () {},
-                child: Text('Home'),
+                child: Icon(Icons.settings),
               ),
             ),
           ],
