@@ -33,19 +33,25 @@ class HomeView extends StatelessWidget {
               ),
               Expanded(
                 child: FlatButton(
-                  onPressed: () {},
-                  child: Icon(Icons.home),
+                  onPressed: () {
+                    model.changePage(HomePage.Ideas)
+                  },
+                  child: Icon(Icons.lightbulb),
                 ),
               ),
               Expanded(
                 child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    model.changePage(HomePage.Messages)
+                  },
                   child: Icon(Icons.mail),
                 ),
               ),
               Expanded(
                 child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    model.changePage(HomePage.Settings)
+                  },
                   child: Icon(Icons.settings),
                 ),
               ),
