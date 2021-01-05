@@ -34,7 +34,7 @@ class HomeView extends StatelessWidget {
               Expanded(
                 child: FlatButton(
                   onPressed: () {
-                    model.changePage(HomePage.Ideas)
+                    model.changePage(HomePage.Ideas);
                   },
                   child: Icon(Icons.lightbulb),
                 ),
@@ -42,7 +42,7 @@ class HomeView extends StatelessWidget {
               Expanded(
                 child: FlatButton(
                   onPressed: () {
-                    model.changePage(HomePage.Messages)
+                    model.changePage(HomePage.Messages);
                   },
                   child: Icon(Icons.mail),
                 ),
@@ -50,7 +50,7 @@ class HomeView extends StatelessWidget {
               Expanded(
                 child: FlatButton(
                   onPressed: () {
-                    model.changePage(HomePage.Settings)
+                    model.changePage(HomePage.Settings);
                   },
                   child: Icon(Icons.settings),
                 ),
@@ -64,7 +64,7 @@ class HomeView extends StatelessWidget {
 
   Widget buildBody(HomePage page) {
     if (page == HomePage.Journal) {
-      return Center(child: Text('Journal'));
+      return Center(child: Text('Welcome to your Journal'));
     } else if (page == HomePage.Profile) {
       return MyProfile();
     }
