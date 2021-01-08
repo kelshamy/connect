@@ -67,6 +67,12 @@ class HomeView extends StatelessWidget {
       return Center(child: Text('Welcome to your Journal'));
     } else if (page == HomePage.Profile) {
       return MyProfile();
+    } else if (page == HomePage.Messages) {
+      return Center(child: Text('Welcome to your Messages'));
+    } else if (page == HomePage.Ideas) {
+      return Center(child: Text('Welcome to Ideas'));
+    } else if (page == HomePage.Settings) {
+      return Center(child: Text('Welcome to your Settings'));
     }
   }
 }
