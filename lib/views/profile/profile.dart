@@ -1,3 +1,4 @@
+import 'package:connect/text_section.dart';
 import 'package:flutter/material.dart';
 
 class MyProfile extends StatefulWidget {
@@ -8,6 +9,15 @@ class MyProfile extends StatefulWidget {
 class _State extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('Welcome to your Profile'));
+    return Scaffold(
+        body: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        TextSection(Colors.lightBlue),
+        TextSection(Colors.lightBlueAccent),
+        TextSection(Colors.blue),
+      ],
+    ));
   }
 }

@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class MyIdeas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('Welcome to Ideas'));
+    return Text('Welcome to Ideas');
   }
 }
